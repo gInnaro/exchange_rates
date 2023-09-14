@@ -12,6 +12,3 @@ def daily_rates(froms: str, to: str, value: float):
     elif froms == 'RUB':
         data = r['rates'][to] * value
         return {"result": data}
-    else:
-        return {"result": 'Выберите отношение к RUB'}
-        
